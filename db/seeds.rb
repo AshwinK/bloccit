@@ -26,7 +26,6 @@ end
 end
 
 puts "Seed finished"
-
 puts "#{Post.count} posts created"
 puts "#{Comment.count} comments created"
 puts "#{Question.count} questions created"
