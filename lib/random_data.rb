@@ -10,7 +10,7 @@ module RandomData
   def self.random_sentence
   strings = []
     rand(3..8).times do
-    strings << random_word
+      strings << random_word
     end
 
     sentence = strings.join(" ")
@@ -22,5 +22,9 @@ module RandomData
     letters.shuffle!
     letters[0,rand(3..8)].join
   end
-  
+
+  def self.random_number
+    rand(99..199)
+  end
+
 end
