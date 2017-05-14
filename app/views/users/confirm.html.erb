@@ -1,13 +1,25 @@
 <div class="row">
   <div class = "col-8-md">
     <h2>Sign Up Confirmation</h2>
-    <h4>Last chance! Make sure these values are correct."</h4>
+    <h4>Last chance! Make sure these values are correct.</h4>
   </div>
 </div>
 
 <div class = "row">
   <div class = "col-4-md">
-    <h5>Name: <% @user.name %></h5>
-    <h5>Email: <% @user.email %></h5>
+    <h5>Name: <%= @user.name %></h5>
+    <h5>Email: <%= @user.email %></h5>
   </div>
+
+  <div class = "col-4-md" style= "float: left; margin-top: 20px;">
+    <%= button_to "Yes", {controller: "users", action: "create", params: params}, class: 'btn btn-success' %>
+  </div>
+
+  <div class = "col-4-md" style = "float: left; margin-top: 20px; margin-left: 20px;">
+    <%= link_to "No", new_user_path, class: 'btn btn-default active' %>
+  </div>
+
+  <div style = "clear: both">
+  </div>
+
 </div>
