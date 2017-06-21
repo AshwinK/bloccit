@@ -15,13 +15,19 @@
  */
 
 
- @import "bootstrap-sprockets";
- @import "bootstrap";
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
- .user-info {
-   margin-top: 9px;
- }
+.user-info {
+  margin-top: 9px;
+}
 
- .nav {
-   margin-top: 5px;
- }
+.nav {
+  margin-top: 5px;
+}
+
+#button-inline {
+  width: auto;
+  position: relative;
+  display: inline;
+}
